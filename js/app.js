@@ -5,7 +5,6 @@ The function will add the following content inside the paragraph with the id of 
 */
 
 var bacon = "Shoulder turducken brisket, kevin swine andouille tri-tip salami tail ham sausage pork loin. Ribeye short loin rump kielbasa pork. Capicola short loin turducken corned beef tongue, chuck leberkas salami frankfurter. Kielbasa fatback pancetta, ground round meatball turducken jowl ribeye alcatra sirloin bacon corned beef beef ribs short loin. Pork belly spare ribs biltong corned beef meatball short ribs tongue alcatra swine drumstick. Biltong shankle kevin, cupim sirloin bresaola brisket. Tail pork belly biltong ball tip tri-tip, pig jerky cow pastrami prosciutto ;ground round bacon capicola tongue meatball.";
-one.addEventListner('click', moreContent);
 function moreContent(){
 
 var addBacon=document.getElementById('more');
@@ -40,9 +39,10 @@ biggie.style.fontSize="150%";
 Next, create a function named valueMenu that will display your favorite items in the paragraph the the id of `menu` after clicking on the showMenu paragraph.
 */
 var menuItems=["Mushroom Bigger","Chicken Nuggets", "Ice Cream Cone"];
+var theMenu=document.getElementById("showMenu");
 function valueMenu(){
 	
-	document.getElementById('menu').innerHTML=menuItems;
+	menu.innerHTML=menuItems;
 }
 
 
@@ -66,9 +66,15 @@ function showPrice(){
 
 
 //7. Mr. Buttons
-/*Add an Event Listener to the button that will display `myQuote` inside the paragraph with the id of `displayQuote` after the button is clicked.*/
-
+/*Add an Event Listener to the button that will display `myQuote` inside the paragraph with the id of `displayQuote` after the button is clicked.
+*/
 var myQuote = "Our lives are defined by opportunities; even the ones we miss.";
+Benjamin.addEventListener("click",function(){
+
+	document.getElementById("displayQuote").innerHTML=myQuote;
+
+});
+
 
 
 //8. Say It again, Randomly
@@ -80,4 +86,30 @@ var quotes = ["It's a funny thing about comin' home. Looks the same, smells the 
 
 //9. Unlock the Secret to Financial Freedom
 /*Create an event listener that will show and hide the message when clicking on the button.
+
+showHide.addEventListener("click",showMessage());
+
+
+function showMessage(){
+
+	if(){
+
+	}else{
+
+
+	}
+
+
+}
 */
+
+
+
+
+
+
+
+
+
+
+
