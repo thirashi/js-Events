@@ -18,7 +18,6 @@ addBacon.innerHTML=bacon;
 /*Create a function named `lessContent` that will initiate the `Show Less` link after clicking on it.
 
 The function will hide the contents in the pargraph with the id of `less` after clicking on the `Show Less` link.*/
-noMore.addEventListner('click',lessContent);
 function lessContent(){
 
 var showLess= document.getElementById('less');
@@ -26,10 +25,14 @@ showLess.style.display= "none";
 
 }
 
-
 //3. Tacocat, The Original Palindrome King
 /*Create a function named `zoom` that will increase the font size of the paragraph with the id of `biggie` after hovering your mouse over it. Increae the font size to 150%*/
+/*biggie.addEventListner('mouseover', moreContent);
+*/
+function zoom(){
 
+biggie.style.fontSize="150%";
+}
 
 //4. McDonalds
 /*Create a variable name menuItems and assign it an array of three of your favorite items at McDonald's.
