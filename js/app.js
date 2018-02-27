@@ -1,4 +1,7 @@
-//1. Makin Bacon
+
+
+
+
 /*Create a function named `moreContent` that will initiate the button after clicking on it.
 
 The function will add the following content inside the paragraph with the id of `more`.
@@ -8,7 +11,7 @@ var bacon = "Shoulder turducken brisket, kevin swine andouille tri-tip salami ta
 function moreContent(){
 
 var addBacon=document.getElementById('more');
-addBacon.id='more';
+
 addBacon.innerHTML=bacon;
 
 }
@@ -78,30 +81,36 @@ Benjamin.addEventListener("click",function(){
 
 
 //8. Say It again, Randomly
-/*Create a function that will generate a random quote from the variable below after clicking on the button.*/
-
+/*Create a function that will generate a random quote from the variable below after clicking on the button.
+*/
 var quotes = ["It's a funny thing about comin' home. Looks the same, smells the same, feels the same. You'll realize what's changed is you.", "Momma? Momma? Some days, I feel different than the day before.", "Some people, were born to sit by a river. Some get struck by lightning. Some have an ear for music. Some are artists. Some swim. Some know buttons. Some know Shakespeare. Some are mothers. And some people, dance.", "For what it's worth, it's never too late to be whoever you want to be."];
 
 
 
+
+random.addEventListener("click", randomQuote);
+
+function randomQuote(){
+
+	var num = Math.floor(Math.random()*quotes.length);
+	displayQuotes.innerHTML= quotes[num];
+}
+
 //9. Unlock the Secret to Financial Freedom
 /*Create an event listener that will show and hide the message when clicking on the button.
-
-showHide.addEventListener("click",showMessage());
-
-
-function showMessage(){
-
-	if(){
-
-	}else{
-
-
-	}
-
-
-}
 */
+showHide.addEventListener("click", moneyMaker);
+
+function moneyMaker(){
+	if (showmoney.style.display === "none"){
+		showmoney.style.display = "block";
+	}
+	else{
+		showmoney.style.display = "none";
+	}
+}
+
+
 
 
 
